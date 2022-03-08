@@ -5,7 +5,7 @@ import numpy as np
 from numpy import pi as PI
 
 class Configuration(object):
-	def __init__(self, nu, epsilon, r, x_0, y_0, points=1000, outfile="zaslavskii.png", graph=True):
+	def __init__(self, nu, epsilon, r, x_0, y_0, points=1000, outfile="generated/zaslavskii.png", graph=True):
 		self.nu = nu
 		self.eps = epsilon
 		self.r = r

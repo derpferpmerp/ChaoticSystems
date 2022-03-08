@@ -18,4 +18,6 @@ def graphHenon(points, outfile="henon.png"):
 	hidePlotBounds(ax)
 	ax.scatter(hr_x, hr_y)
 	plt.draw()
-	plt.savefig(outfile)
+	plt.savefig("./generated/henon.png")
+ 
+hr = henon(1, 1, points=500)

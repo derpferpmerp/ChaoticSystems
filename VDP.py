@@ -2,7 +2,7 @@ from lode import System
 import numpy as np
 
 class VDP(System):
-	def __init__(self, mu=0.1, state0=[1.0,1.0]):
+	def __init__(self, mu=1.0, state0=[1.0,1.0]):
 		self.mu = mu
 		self.state0 = state0
 
@@ -15,4 +15,4 @@ class VDP(System):
 
 SYSTEM = VDP()
 SYSTEM.calculateSystem(np.arange(0.0, 100.0, 0.01))
-SYSTEM.graph(outfile="VDP.png", dimensions=2)
+SYSTEM.graph(outfile="VDP.png", dimensions=2, scaleAxes=True)

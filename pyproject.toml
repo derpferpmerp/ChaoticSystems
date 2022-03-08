@@ -2,11 +2,14 @@
 name = "chaoticsystems"
 version = "0.1.0"
 description = ""
-authors = ["Your Name <you@example.com>"]
+authors = ["Cole Fleming <cmfleming@eths202.org>"]
 
 [tool.poetry.dependencies]
-python = "^3.8"
-manimgl = "^1.3.0"
+python = ">=3.8,<3.11"
+scipy = "^1.8.0"
+numpy = "^1.22.3"
+matplotlib = "^3.5.1"
+tqdm = "^4.63.0"
 
 [tool.poetry.dev-dependencies]
 
