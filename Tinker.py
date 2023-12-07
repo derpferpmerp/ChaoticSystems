@@ -29,7 +29,8 @@ PRESET_1 = Configuration(
 	gamma=2,
 	delta=0.5,
 	x_0=-0.72,
-	y_0=-0.64
+	y_0=-0.64,
+	points=1000
 )
 
 def tinker(config:Configuration):
@@ -46,9 +47,12 @@ def graphTinker(config):
 	points = config.pointList
 	outfile = config.outfile
 	plt.style.use("dark_background")
-	fig, ax = plt.subplots(1, 1, figsize=(20,20))
+	fig, ax = plt.subplots(1, 1, figsize=(7,7))
 	hidePlotBounds(ax)
-	tk_x, tk_y = list(zip(*points))
+	tk_x, tk_y= list(zip(*points))
 	ax.scatter(tk_x, tk_y)
 	plt.draw()
-	plt.savefig(outfile)
+	plt.show()
+	#plt.savefig(outfile)
+
+tinker(PRESET_1)

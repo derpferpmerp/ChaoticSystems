@@ -53,6 +53,7 @@ for i, bounds in tqdm(list(enumerate(boundsLIST)), unit="bounds"):
     for x, y in bounds_lst:
         bx.append(x)
         by.append(y)
-    plt.plot(bx, by)
+    fig, ax = plt.subplots(1,1,figsize=(13.5,10))
+    ax.plot(bx, by)
 
 plt.savefig(f"generated/dragon.png")

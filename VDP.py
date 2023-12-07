@@ -2,7 +2,7 @@ from lode import System
 import numpy as np
 
 class VDP(System):
-	def __init__(self, mu=1.0, state0=[1.0,1.0]):
+	def __init__(self, mu=0.5, state0=[1.0,1.0]):
 		self.mu = mu
 		self.state0 = state0
 

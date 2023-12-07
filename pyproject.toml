@@ -5,7 +5,7 @@ description = ""
 authors = ["Cole Fleming <cmfleming@eths202.org>"]
 
 [tool.poetry.dependencies]
-python = ">=3.8,<3.11"
+python = ">=3.8,<3.11.3"
 scipy = "^1.8.0"
 numpy = "^1.22.3"
 matplotlib = "^3.5.1"

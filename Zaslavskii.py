@@ -57,9 +57,12 @@ def graphZas(config):
 	points = config.pointList
 	outfile = config.outfile
 	plt.style.use("dark_background")
-	fig, ax = plt.subplots(1, 1, figsize=(20,20))
+	fig, ax = plt.subplots(1, 1, figsize=(10,10))
 	hidePlotBounds(ax)
 	tk_x, tk_y = list(zip(*points))
 	ax.scatter(tk_x, tk_y)
 	plt.draw()
-	plt.savefig(outfile)
+	plt.show()
+	#plt.savefig(outfile)
+
+zas(PRESET)
